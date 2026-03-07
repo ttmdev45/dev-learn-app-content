@@ -1,1 +1,6 @@
-## Why Null Safety?\nIn Dart, null safety means variables cannot contain null unless you say so...\n\n```dart\nString? name; // Nullable\nString base = 'Dart'; // Non-nullable\n```
+## Why Null Safety?
+In Dart, null safety means variables cannot contain null unless you say so...
+```dart
+String? name; // Nullable
+String base = 'Dart'; // Non-nullable
+```
