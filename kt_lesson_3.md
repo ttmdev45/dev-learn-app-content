@@ -1,24 +1,48 @@
-# Generics & Variance (In/Out) (Kotlin)
+# Expect / Actual Pattern Guide (Kotlin Multiplatform)
 
 ## Introduction
 
-Generics in Kotlin allow you to write **flexible and reusable code** by working with different data types safely.
+The **Expect/Actual pattern** is a core concept in **Kotlin Multiplatform (KMP)**.
 
-Variance (`in` / `out`) helps control how generic types behave in inheritance.
+It allows you to:
 
-👉 Together, they provide **type safety + flexibility**
-
----
-
-# 1. What are Generics?
-
-## Definition
-
-Generics allow classes and functions to operate on **different types** while maintaining type safety.
+- write shared (common) code
+- provide platform-specific implementations
+- keep your business logic reusable across platforms (Android, iOS, Web, etc.)
 
 ---
 
-## Example (Without Generics ❌)
+## Why Use Expect / Actual?
 
-```kotlin
-class Box(val value: Any)
+In multiplatform projects, some features depend on the platform:
+
+- file system access
+- network APIs
+- device hardware
+- secure storage
+- logging
+
+👉 You cannot implement these once in common code.
+
+So Kotlin provides:
+
+- `expect` → declaration in shared code
+- `actual` → implementation in platform code
+
+---
+
+# 1. How It Works
+
+## Concept
+
+| Layer | Role |
+|------|------|
+| commonMain | declare expected API |
+| androidMain / iosMain | provide actual implementation |
+
+---
+
+## Flow
+
+```text
+commonMain (expect) → androidMain / iosMain (actual)
