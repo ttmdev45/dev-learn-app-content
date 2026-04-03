@@ -1,4 +1,4 @@
-# Mastering Collection If & Collection For (Flutter)
+# Mastering Collection If & Collection For
 
 ## Introduction
 
