@@ -1,4 +1,4 @@
-# Sealed Classes & Pattern Matching (Kotlin)
+## Sealed Classes & Pattern Matching (Kotlin)
 
 ## Introduction
 
@@ -12,7 +12,7 @@ They are widely used in **Android development**, especially with **Jetpack Compo
 
 ---
 
-# What is a Sealed Class?
+## What is a Sealed Class?
 
 ## Definition
 

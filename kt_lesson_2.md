@@ -1,4 +1,4 @@
-# Generics & Variance (In/Out) (Kotlin)
+## Generics & Variance (In/Out) (Kotlin)
 
 ## Introduction
 
@@ -10,7 +10,7 @@ Variance (`in` / `out`) helps control how generic types behave in inheritance.
 
 ---
 
-# 1. What are Generics?
+## 1. What are Generics?
 
 ## Definition
 

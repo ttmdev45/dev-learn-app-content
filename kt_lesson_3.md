@@ -1,4 +1,4 @@
-# Expect / Actual Pattern Guide (Kotlin Multiplatform)
+## Expect / Actual Pattern Guide (Kotlin Multiplatform)
 
 ## Introduction
 
@@ -31,7 +31,7 @@ So Kotlin provides:
 
 ---
 
-# 1. How It Works
+## 1. How It Works
 
 ## Concept
 
